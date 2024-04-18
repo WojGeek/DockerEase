@@ -1,11 +1,21 @@
 ## Primeros pasos en la administración de contenedores
 
-Contiene las herramientas que he creado durante las prácticas de gestión de contenedores con Docker.
+Contiene las herramientas que he creado durante al aprendizaje y prácticas de gestión de contenedores con Docker.
 
-### Objetivo: 
+ 
 
-> Ser hábil en la administración de Docker para complementar mi 
-> formación como Ingeniero DevOps.
+> Objetivo: Adquirir habilidades como Ingeniero DevOps.
+
+
+#### Sugerencia de instalación
+
+```
+    wp / project-x > cd ~
+    wp  ~ > git clone https://github.com/WojGeek/DockerEase.git
+
+
+``` 
+
 
 #### 1. Crear una imagen utilizando Docker Build
 

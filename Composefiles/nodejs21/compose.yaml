@@ -1,0 +1,22 @@
+services:
+  nodejs:
+    networks:
+      - ejemplo-1.com
+      #container_name: amazonas
+    image: nodejs21-build
+    user: "node"
+    working_dir: /home/node/app
+    #restart: always
+    environment:
+      - NODE_ENV=production
+    expose: 
+      - "8081"
+    ports:
+      - "8001:8001"
+    volumes:
+      - /home/wp/docker-persistence/nodejs:/home/node/app
+    command: "npm start"
+networks:
+  ejemplo-1.com:
+    external: true
+

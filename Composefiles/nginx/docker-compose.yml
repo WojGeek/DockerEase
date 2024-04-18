@@ -1,0 +1,14 @@
+name: 
+  www
+services:
+  web:
+    container_name: orinoco
+    networks:
+      - backend
+    image: nginx-build
+    # restart: always
+    ports:
+      - "8080:80"
+networks:
+  backend:
+    external: true

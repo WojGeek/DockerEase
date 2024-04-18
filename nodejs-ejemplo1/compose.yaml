@@ -1,0 +1,23 @@
+#name: 
+#  nodejs
+services:
+  nodejs:
+    image: nodejs:1.07
+    container_name: nodejs-01
+    networks:
+      - ejemplo-1.com
+    user: "node"
+    working_dir: /usr/src/app
+    #restart: always
+    environment:
+      - NODE_ENV=production
+    expose: 
+      - "8090"
+    ports:
+      - "8001:8090"
+    #volumes:
+    #- ./app:/usr/src/app/
+    command: "npm start"
+networks:
+  ejemplo-1.com:
+    external: true

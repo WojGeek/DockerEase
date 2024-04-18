@@ -1,0 +1,23 @@
+name:
+  psql
+services:
+  postgres:
+    image: psql-build
+    networks:
+      - backend
+      - ejemplo-1.com
+    container_name: amazonas
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=hokusai
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/wp/docker-persistence/postgres_data:/var/lib/postgresql/data
+networks:
+  backend:
+    external: true
+  ejemplo-1.com:
+    external: true
+

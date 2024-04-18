@@ -1,0 +1,17 @@
+name:
+  db2
+services:
+  dbase:
+    image: mariadb-build
+    networks:
+      - frontend
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 12qwaszx
+    ports:
+      - 3306:3306
+    volumes:
+      - /home/wp/docker-data/mariadb/dbase:/var/lib/mysql/
+networks:
+  frontend:
+    external: true

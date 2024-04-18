@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# procedimiento para crear la images #
+#
+
+docker build -f Dockerfile-1.may-08 --rm=true -t willianspatino/httpd .

@@ -1,4 +1,0 @@
-FROM nginx:latest
-COPY  /home/wp/docker-persistence/nginx/index.html /user/share/nginx/html
-EXPOSE 8080
-CMD ["nginx", "-g", "daemon off";"]

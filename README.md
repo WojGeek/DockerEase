@@ -10,9 +10,8 @@ Contiene las herramientas que he creado durante al aprendizaje y prácticas de g
 #### Sugerencia de instalación
 
 ```
-    wp / project-x > cd ~
-    wp  ~ > git clone https://github.com/WojGeek/DockerEase.git
-
+    $  cd ~/
+    $  git clone https://github.com/WojGeek/DockerEase.git
 
 ``` 
 
@@ -22,11 +21,11 @@ Contiene las herramientas que he creado durante al aprendizaje y prácticas de g
 > #### Requerimientos:
 > - Declarar el Dockerfile
 > 
->  - Ejecutar el script **./build-umage.sh**
+>  - Ejecutar el script **./build-image.sh**
 >
 
 ```
-   $ ./build-image.sh  <image-name> <Dockerfile path> [version]
+   $  ~/DockerEase/build-image.sh  <image-name> <Dockerfile path> [version]
 
 
 ``` 
@@ -41,7 +40,7 @@ Contiene las herramientas que he creado durante al aprendizaje y prácticas de g
 >
 
 ```
-   $  ./compose-container.sh  <path/compose.yaml> 
+   $  ~/DockerEase/compose-container.sh  <path/compose.yaml> 
 
 
 ``` 
